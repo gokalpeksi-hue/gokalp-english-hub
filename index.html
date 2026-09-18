@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Gökalp English Hub</title>
+<meta name="description" content="İngilizce çalışma uygulamaları: MyDictionary sözlük ve English Studio kelime kartları tek çatı altında.">
+<meta name="theme-color" content="#1d2c4f">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-512.png">
+<link rel="apple-touch-icon" href="icon-512.png">
+<style>
+  :root {
+    --bg: #14203c;
+    --bg2: #1d2c4f;
+    --card: #243758;
+    --card-hover: #2c4269;
+    --text: #eef2fb;
+    --muted: #9fb0d0;
+    --accent: #ffb74d;
+    --accent2: #64b5f6;
+    --accent3: #81c784;
+    --radius: 18px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(160deg, var(--bg) 0%, var(--bg2) 100%);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: max(24px, env(safe-area-inset-top)) 16px 40px;
+  }
+  header { text-align: center; margin: 24px 0 8px; }
+  header h1 {
+    font-size: clamp(1.7rem, 5vw, 2.4rem);
+    letter-spacing: 0.5px;
+  }
+  header h1 .flag { font-size: 0.9em; }
+  header p { color: var(--muted); margin-top: 8px; font-size: 0.98rem; }
+  main {
+    width: 100%;
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 28px;
+  }
+  a.app-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 20px 22px;
+    text-decoration: none;
+    color: var(--text);
+    border: 1px solid rgba(255,255,255,0.07);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    transition: transform 0.15s ease, background 0.15s ease;
+  }
+  a.app-card:hover, a.app-card:active {
+    background: var(--card-hover);
+    transform: translateY(-2px);
+  }
+  .app-icon {
+    font-size: 2.2rem;
+    width: 58px; height: 58px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 14px;
+    flex-shrink: 0;
+  }
+  .ic-dict { background: rgba(255,183,77,0.15); }
+  .ic-cards { background: rgba(100,181,246,0.15); }
+  .ic-arsiv { background: rgba(129,199,132,0.12); }
+  .app-info h2 { font-size: 1.15rem; margin-bottom: 4px; }
+  .app-info h2 span { font-size: 0.72rem; font-weight: 600; padding: 2px 8px; border-radius: 999px; vertical-align: middle; margin-left: 6px; }
+  .badge-dict { background: rgba(255,183,77,0.2); color: var(--accent); }
+  .badge-cards { background: rgba(100,181,246,0.2); color: var(--accent2); }
+  .badge-arsiv { background: rgba(129,199,132,0.18); color: var(--accent3); }
+  .app-info p { color: var(--muted); font-size: 0.88rem; line-height: 1.45; }
+  .arrow { margin-left: auto; color: var(--muted); font-size: 1.3rem; flex-shrink: 0; }
+  .section-note {
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-top: 14px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  footer { margin-top: auto; padding-top: 36px; color: var(--muted); font-size: 0.78rem; text-align: center; }
+</style>
+</head>
+<body>
+<header>
+  <h1><span class="flag">🇬🇧</span> Gökalp English Hub</h1>
+  <p>İngilizce çalışma uygulamaların tek çatı altında</p>
+</header>
+
+<main>
+  <a class="app-card" href="kelime-karti/index.html">
+    <div class="app-icon ic-dict">📖</div>
+    <div class="app-info">
+      <h2>MyDictionary <span class="badge-dict">Sözlük</span></h2>
+      <p>İngilizce kelime &amp; cümle sözlüğü — Excel/CSV yükle, kartlarla çalış, seslendir.</p>
+    </div>
+    <div class="arrow">›</div>
+  </a>
+
+  <a class="app-card" href="english-studio/index.html">
+    <div class="app-icon ic-cards">🃏</div>
+    <div class="app-info">
+      <h2>English Studio <span class="badge-cards">Kelime Kartları</span></h2>
+      <p>Cümle kartları, kelime anlam balonları, EN→TR / TR→EN yön seçimi, kaldığın yerden devam.</p>
+    </div>
+    <div class="arrow">›</div>
+  </a>
+
+  <a class="app-card" href="ezber/index.html">
+    <div class="app-icon ic-arsiv">🗂️</div>
+    <div class="app-info">
+      <h2>EZBER <span class="badge-arsiv">Arşiv</span></h2>
+      <p>MyDictionary'nin eski ezber sürümü — yedek olarak saklanıyor.</p>
+    </div>
+    <div class="arrow">›</div>
+  </a>
+
+  <p class="section-note">
+    Bu hub, uygulamaların en son yedeklerinin kopyalarını barındırır.<br>
+    Orijinal uygulamalar ve repoları değiştirilmeden aynen korunmaktadır.
+  </p>
+</main>
+
+<footer>Gökalp English Hub · Son yedek: 18 Eylül 2026</footer>
+</body>
+</html>

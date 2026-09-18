@@ -1,0 +1,17 @@
+{
+  "name": "Gökalp English Hub",
+  "short_name": "English Hub",
+  "description": "İngilizce çalışma uygulamaları: MyDictionary sözlük ve English Studio kelime kartları tek çatı altında",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#14203c",
+  "theme_color": "#1d2c4f",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "categories": ["education"],
+  "lang": "tr"
+}
