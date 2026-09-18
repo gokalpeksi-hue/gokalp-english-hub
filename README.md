@@ -12,6 +12,14 @@
 | English Studio (kelime kartları) | `english-studio/` | [english-studio](https://github.com/gokalpeksi-hue/english-studio) | 12.09.2026 |
 | EZBER (arşiv sürüm) | `ezber/` | [EZBER](https://github.com/gokalpeksi-hue/EZBER) | 29.06.2026 |
 
+## Yedekleme
+
+Hub açılış sayfasında **⬇️ Yedek al (.json)** ve **⬆️ Yedekten yükle** butonları vardır.
+Uygulamaların tümü veriyi tarayıcının `localStorage`'ında tuttuğu ve GitHub Pages'te
+aynı origin'i paylaştığı için hub, bu tarayıcıdaki bütün uygulama verilerini
+(MyDictionary kartları, English Studio listesi/konumu, EZBER kayıtları) tek JSON
+dosyasında dışa aktarır ve başka cihazda/tarayıcıda geri yükler.
+
 ## Güvenlik notu
 
 Bu repo yalnızca **kopyaları** barındırır. Orijinal repolar ve masaüstündeki eski
